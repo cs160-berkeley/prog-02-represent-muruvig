@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center" android:layout_gravity="center"
+    tools:context=".SecondPerson" android:orientation="vertical" tools:deviceIds="wear_round"
+    android:background="@drawable/blue_rectangle"
+    android:id="@+id/layout"
+    android:longClickable="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Diane Feinstein"
+        android:textColor="#000000"
+        android:id="@+id/name" />
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="100dp"
+        android:id="@+id/picture"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/diane_feinstein" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Democrat"
+        android:textColor="#000000"
+        android:id="@+id/party"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Details"
+        android:id="@+id/details"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>
+
