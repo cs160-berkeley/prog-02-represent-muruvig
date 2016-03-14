@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_marginTop="10dp">
+
+    <ImageView
+    android:layout_width="350dp"
+    android:layout_height="250dp"
+    android:id="@+id/background"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/blue_rectangle"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Senator Barbara Boxer"
+    android:id="@+id/name"
+    android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/photo"
+        android:layout_marginLeft="110dp" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceMedium"
+    android:text="Democrat"
+    android:id="@+id/party"
+    android:layout_below="@+id/name"
+    android:layout_alignStart="@+id/name" />
+
+    <ImageView
+    android:layout_width="100dp"
+    android:layout_height="130dp"
+    android:id="@+id/photo"
+        android:src="@drawable/barbara_boxer"
+        android:layout_alignTop="@+id/name"
+        android:layout_alignStart="@+id/background"
+        android:layout_marginTop="5dp"
+        android:layout_alignLeft="@+id/background"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:id="@+id/email_icon"
+    android:layout_below="@+id/party"
+    android:layout_alignStart="@+id/party"
+    android:src="@drawable/email" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="senator@boxer.senate.gov"
+    android:textColor="#00ADFF"
+    android:id="@+id/email"
+    android:layout_alignBottom="@+id/email_icon"
+    android:layout_toEndOf="@+id/email_icon"
+    android:layout_marginBottom="11dp"
+        android:clickable="true" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="Website:"
+    android:id="@+id/website_header"
+    android:layout_below="@+id/email_icon"
+    android:layout_alignStart="@+id/email_icon" />
+
+    <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceSmall"
+    android:text="https://www.boxer.senate.gov"
+    android:textColor="#00ADFF"
+    android:id="@+id/website"
+    android:layout_below="@+id/website_header"
+    android:layout_alignStart="@+id/website_header"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/photo"
+        android:layout_toRightOf="@+id/twitter_icon"
+        android:layout_alignEnd="@+id/email">
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="See me at the debate tonight and support your district Congressman!"
+        android:textColor="#000000"
+        android:id="@+id/tweet"
+            android:singleLine="false"
+            android:layout_toRightOf="@+id/twitter_icon"
+            android:layout_alignBottom="@+id/twitter_icon"
+            android:textAlignment="center"
+            android:layout_alignRight="@+id/background"
+            android:layout_below="@+id/photo"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+    <ImageView
+    android:layout_width="65dp"
+    android:layout_height="65dp"
+    android:id="@+id/twitter_icon"
+        android:src="@drawable/twitter"
+        android:layout_below="@+id/photo"
+        android:layout_alignStart="@+id/photo" />
+
+</RelativeLayout>

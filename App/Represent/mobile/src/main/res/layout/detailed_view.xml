@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/outerScrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:id="@+id/picture"
+                    android:layout_marginTop="42dp"
+                    android:src="@drawable/barbara_boxer"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Senator Barbara Boxer"
+                    android:id="@+id/name"
+                    android:layout_alignTop="@+id/picture"
+                    android:layout_toEndOf="@+id/picture"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Democrat"
+                    android:id="@+id/party"
+                    android:layout_below="@+id/name"
+                    android:layout_toEndOf="@+id/picture"
+                    android:layout_gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="senator@boxer.senate.gov"
+                        android:textColor="#00ADFF"
+                        android:id="@+id/email"
+                        android:layout_alignBottom="@+id/imageView11"
+                        android:layout_toEndOf="@+id/imageView11"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginTop="17dp"
+                        android:layout_gravity="center"
+                        android:linksClickable="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="www.boxer.senate.gov"
+                        android:textColor="#00ADFF"
+                        android:id="@+id/website"
+                        android:layout_below="@+id/textView24"
+                        android:layout_toEndOf="@+id/picture"
+                        android:layout_gravity="center"
+                        android:linksClickable="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/twitter_logo"
+                        android:src="@drawable/twitter"
+                        android:layout_marginStart="26dp"
+                        android:layout_below="@+id/picture"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="77dp"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="See me at the debate tonight and support your district Congressman!"
+                        android:id="@+id/tweet"
+                        android:layout_alignTop="@+id/twitter_logo"
+                        android:layout_toEndOf="@+id/twitter_logo"
+                        android:layout_marginTop="27dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Political Information"
+                    android:id="@+id/pol_info"
+                    android:layout_below="@+id/twitter_logo"
+                    android:layout_alignStart="@+id/twitter_logo"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="Congressional Term:"
+                        android:id="@+id/term_header"
+                        android:layout_marginLeft="25dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="June 2012 - June 2016"
+                        android:id="@+id/term"
+                        android:layout_marginLeft="15dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Committees Served"
+                        android:id="@+id/committees_header"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/textView28"
+                        android:layout_alignStart="@+id/textView28"
+                        android:layout_gravity="left" />
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/committees_scroll"
+                        android:layout_marginTop="10dp">
+
+                        <ListView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/committees_list" />
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Bills Sponsored:"
+                        android:id="@+id/bills_header"
+                        android:layout_below="@+id/textView31"
+                        android:layout_alignStart="@+id/textView31"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="left" />
+
+                    <ScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/bills_scroll"
+                        android:layout_marginTop="10dp">
+
+                        <ListView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/bills_list" />
+                    </ScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
